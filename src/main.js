@@ -17,7 +17,7 @@ axios.interceptors.request.use(config => {
 import {
   Button, Form, FormItem, Input, Container, Header, Aside, Main, Menu, Breadcrumb,
   BreadcrumbItem, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog,
-  MessageBox
+  MessageBox, Tag, Select, Option
 } from 'element-ui'
 
 Vue.use(ElementUI)
@@ -40,6 +40,9 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Select)
+Vue.use(Option)
 
 Vue.prototype.$confirm = MessageBox.confirm
 
