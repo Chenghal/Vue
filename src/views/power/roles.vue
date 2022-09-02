@@ -162,6 +162,7 @@ export default {
         },
         //保存勾选信息,发送请求
         async allotRights() {
+            //通过tree组件的getCheckedKeys()和getHalfCheckedKeys()方法得到所有的勾选状态然后拼接成字符串发送post的请求更新数据
             const keys = [...this.$refs.treeref.getCheckedKeys(),
             ...this.$refs.treeref.getHalfCheckedKeys()]
 

@@ -6,6 +6,7 @@ import WeleCome from '@/views/weleCome.vue'
 import Users from '@/views/user/users.vue'
 import Rights from '@/views/power/rights.vue'
 import Roles from '@/views/power/roles.vue'
+import Cate from '@/views/goods/Cate.vue'
 
 Vue.use(VueRouter)
 
@@ -18,7 +19,8 @@ const routes = [
     children: [{ path: '/welecom', component: WeleCome },
     { path: '/users', component: Users },
     { path: '/rights', component: Rights },
-    { path: '/roles', component: Roles }
+    { path: '/roles', component: Roles },
+    { path: '/categories', component: Cate }
     ]
   }
 ]

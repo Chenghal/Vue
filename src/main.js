@@ -14,12 +14,13 @@ axios.interceptors.request.use(config => {
   return config
 })
 
+import TreeTable from 'vue-table-with-tree-grid'
 import {
   Button, Form, FormItem, Input, Container, Header, Aside, Main, Menu, Breadcrumb,
   BreadcrumbItem, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog,
-  MessageBox, Tag, Select, Option
+  MessageBox, Tag, Select, Option, Cascader
 } from 'element-ui'
-
+Vue.component('tree-table', TreeTable)
 Vue.use(ElementUI)
 Vue.use(Form)
 Vue.use(FormItem)
@@ -43,6 +44,7 @@ Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 Vue.prototype.$confirm = MessageBox.confirm
 
