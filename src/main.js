@@ -18,7 +18,8 @@ import TreeTable from 'vue-table-with-tree-grid'
 import {
   Button, Form, FormItem, Input, Container, Header, Aside, Main, Menu, Breadcrumb,
   BreadcrumbItem, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog,
-  MessageBox, Tag, Select, Option, Cascader
+  MessageBox, Tag, Select, Option, Cascader, Alert, Tabs, TabPane
+
 } from 'element-ui'
 Vue.component('tree-table', TreeTable)
 Vue.use(ElementUI)
@@ -45,6 +46,9 @@ Vue.use(Tag)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 Vue.prototype.$confirm = MessageBox.confirm
 

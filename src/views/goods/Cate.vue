@@ -168,7 +168,7 @@ export default {
         },
         // 选项改变触发
         parentCateChanged() {
-            if (this.selectedKeys > 0) {
+            if (this.selectedKeys.length > 0) {
                 this.addCateForm.cat_pid = this.selectedKeys[this.selectedKeys.length - 1]
                 this.addCateForm.cat_level = this.selectedKeys.length
             }
@@ -189,7 +189,7 @@ export default {
                 this.$message.success('添加分类成功')
                 this.getCateList()
                 this.addCateDialogVisible = false
-                console.log(res)
+                // console.log(this.addCateForm.cat_level)
             })
         }
     }
