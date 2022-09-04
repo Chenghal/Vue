@@ -283,7 +283,7 @@ export default {
     width: 100%;
 }
 
-.ql-container.ql-snow {
-    min-height: 300px;
+.ql-container .ql-snow {
+    min-height: 300px !important;
 }
 </style>

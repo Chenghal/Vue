@@ -25,7 +25,7 @@ import {
   Button, Form, FormItem, Input, Container, Header, Aside, Main, Menu, Breadcrumb,
   BreadcrumbItem, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog,
   MessageBox, Tag, Select, Option, Cascader, Alert, Tabs, TabPane, Step, Steps, CheckboxGroup,
-  Checkbox, Upload
+  Checkbox, Upload, Timeline, TimelineItem
 
 } from 'element-ui'
 
@@ -63,6 +63,8 @@ Vue.use(Steps)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 Vue.filter('dateFormat', function (originVal) {
   const dt = new Date(originVal)
